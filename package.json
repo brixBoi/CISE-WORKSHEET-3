@@ -2,15 +2,15 @@
   "name": "worksheet-3",
   "version": "1.0.0",
   "description": "CISE REACT Worksheet 3",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "app": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd frontend && npm run build",
     "install-client": "cd frontend && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "develop": "npm run server",
+    "start": "npm run server"
   },
   "author": "Zach Martin",
   "license": "ISC",
